@@ -1,0 +1,80 @@
+body {
+  direction: rtl;
+  background-color: rgb(185, 179, 179);
+}
+
+.peregraph b {
+  background-color: grey;
+  padding: 10px; 
+  border: 2px solid black;
+  
+}
+
+.column {
+  
+  border: 1px;
+}
+
+.header {
+  text-align: center;
+}
+img {
+  width: 100px;
+  float: right;
+  box-shadow: 10px 10px 5px black;
+}
+.div {
+  text-align: right;
+}
+
+table {
+  direction: rtl;
+  border-collapse: collapse;
+  border: 2px solid rgb(100, 100, 100);
+  letter-spacing: 1px;
+
+  font-size: 0.7rem;
+}
+
+td,
+th {
+  border: 1px solid rgb(100, 100, 100);
+  padding: 10px 10px;
+}
+
+td {
+  text-align: center;
+}
+
+button {
+  position: relative;
+  right: 700px;
+}
+input[type="text"] {
+  border: 2px solid black;
+  background-color: rgb(232, 223, 223);
+}
+input[type="date"] {
+  border: 2px solid black;
+  background-color: rgb(232, 223, 223);
+}
+h4 {
+  color: brown;
+}
+* {
+  font-weight: bold;
+}
+.explanation{
+ padding: 10px; 
+ border: 2px solid black; 
+ margin: 20px;
+}
+
+.explanation>h2{
+  text-align: center;
+}
+.statment5{
+  padding: 10px; 
+  border: 2px solid black;
+  text-align: center;
+}

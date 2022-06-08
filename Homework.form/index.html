@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FORM-116</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <img
+        src="200px-Rashut_HaMisim.svg.png"
+        alt="לוגו של רשות המיסים בישראל"
+      />
+      <br /><br /><br /><br />
+      <h1>בקשה להקלה ולתיאום בחישוב ניכויי המס</h1>
+      <h2>על ידי פקיד השומה או ע"י מייצג</h2>
+      <h3>שנת המס ___:___:___:___</h3>
+      <h2 class="peregraph">
+        <b
+          >לתשומת לבך: ניתן להערוך תיאום מס באמצעות האינטרנט באתר רשות המיסים
+          שכתובתו: www.texes.gov.il <br> <br> כמו כן ניתן לשלוח בקשה בדואר או בפקס לפקיד
+          השומה באזור מגוריך.</b
+        >
+      </h2>
+    </header>
+    <div class="A.personaldata">
+      <form id="ex1" action="https://formspree.io/f/xzboobye" method="post">
+        <section  class="column">
+          <fieldset>
+            <legend><p>א. פרטים אישיים*</p></legend>
+              <label for="private Details"> מספר תעודת זהות:</label>
+            <input
+              class="column"
+              type="text"
+              name="number"
+              placeholder="מספר תעודת זהות*(9 ספרות)"
+              required
+            />
+              <label for="private Details">שם משפחה:</label>
+            <input
+              class="column"
+              type="text"
+              name="name"
+              placeholder="שם משפחה"
+            />
+              <label for="private Details">שם פרטי:</label>
+            <input
+              class="column"
+              type="text"
+              name="name"
+              placeholder="שם פרטי"
+            />
+            <label for="private Details">תאריך לידה:</label>
+
+           <input class="column" type="date" />
+            <hr />
+            <h4><ins> כתובת פרטית </ins></h4>
+              <label for="text">רחוב שכונה:</label>
+            <input
+              class="column"
+              type="text"
+              name="name"
+              placeholder="רחוב/שכונה"
+            />
+            <label for="adress">מספר בית:</label>
+            <input class="column" type="text" name="name" placeholder="מספר" />
+            <label for="adress">מקום מגורים:</label>
+            <input
+              class="column"
+              type="text"
+              name="name"
+              placeholder="עיר/יישוב"
+            />
+            <label for="adress"> מיקוד:</label>
+            <input class="column" type="text" name="name" placeholder="מיקוד" />
+            <label for="adress">מספר טלפון</label>
+            <input
+              class="column"
+              type="text"
+              name="name"
+              placeholder="מספר טלפון"
+            />
+            <hr />
+            <h4 id="h4"><ins> מין </ins></h4>
+            <br />
+            <div class="container">
+              <label for="man">זכר</label>
+              <input type="radio" name="gender" value="man" id="man" />
+              <label for="woman">נקבה</label>
+              <input type="radio" name="gender" value="woman" id="woman" />
+              <hr />
+            </div>
+            <h4><ins> מצב משפחתי* </ins></h4>
+
+            <label for="family status"> מצב משפחתי:</label>
+            <select name="status" id="status">
+              <option value="single">רווק/ה</option>
+              <option value="married">נשוי/אה</option>
+              <option value="divorce">גרוש/ה</option>
+              <option value="widow">אלמן/ה</option>
+              <option value="separate">פרוד/ה</option>
+            </select>
+
+            <h4><ins> תושב ישראל </ins></h4>
+            <input type="radio" name="resident1" id="resident1" value="yes" />
+            <label for="resident1"> כן</label>
+
+            <hr />
+            <h4><ins> תאריך עלייה </ins></h4>
+            <input type="date" />
+          </fieldset>
+        </section>
+        <section id="2">
+          <fieldset>
+            <legend>ב. פרטים על בן/בת הזוג והכנסתו/ה*</legend>
+            <label for="partnerdeetails"> מספר זהות:</label>
+            <input
+              type="text"
+              name="c"
+              placeholder="מספר זהות (9 ספרות)"
+              required
+            />
+            <label for="partnerdeetails">שם משפחה: </label>
+            <input type="text" name="c" placeholder="שם משפחה" />
+            <label for="partnerdeetails">שם פרטי:</label>
+            <input type="text" name="c" placeholder="שם פרטי" />
+            <hr />
+            <input type="radio" name="a" value="no" />אין לו/לה כל הכנסה<br />
+            <br />
+            <input type="radio" name="a" value="yes" />יש לו/לה הכנסה מ:
+            <input type="radio" name="b" value="2" />עבודה
+            <input type="radio" name="b" value="2" />עסק
+            <input type="radio" name="b" value="2" />קצבה &nbsp;
+            <label for="username">מקור אחר פרט:</label>
+            <input type="text" name="username" id="username" />
+          </fieldset>
+        </section>
+          <section id="3">
+        <fieldset id="3" dir="rtl">
+          <legend>ג. פרטים ילדי שבשנת המס טרם מךאו להם 18*</legend>
+          <p>
+            סמן & ליד שם הילד: <strong> בטור 1</strong> אם הילד נמצא בחזקתך
+            &nbsp; <strong>בטור 2</strong> אם את/ה מקבל/ת בגינו קצבת ילדים
+            <abbr title="המכללה לביטוח לאומי">מב"ל</abbr>
+          </p>
+          <table id="EmployeeDetails">
+            <tr>
+              <th>1</th>
+              <th>2</th>
+              <th>שם</th>
+              <th>מספר זהות</th>
+              <th>תאריך לידה</th>
+              <th>גיל בשנת המס</th>
+            </tr>
+            <tr>
+              <td><textarea name="" id="" cols="5" rows="1"></textarea></td>
+              <td><textarea name="" id="" cols="5" rows="1"></textarea></td>
+              <td><textarea name="" id="" cols="5" rows="1"></textarea></td>
+              <td><textarea name="" id="" cols="5" rows="1"></textarea></td>
+              <td><textarea name="" id="" cols="5" rows="1"></textarea></td>
+              <td><textarea name="" id="" cols="5" rows="1"></textarea></td>
+            </tr>
+            <tr>
+              <td><textarea name="" id="" cols="5" rows="1"></textarea></td>
+              <td><textarea name="" id="" cols="5" rows="1"></textarea></td>
+              <td><textarea name="" id="" cols="5" rows="1"></textarea></td>
+              <td><textarea name="" id="" cols="5" rows="1"></textarea></td>
+              <td><textarea name="" id="" cols="5" rows="1"></textarea></td>
+              <td><textarea name="" id="" cols="5" rows="1"></textarea></td>
+            </tr>
+            <tr>
+              <td><textarea name="" id="" cols="5" rows="1"></textarea></td>
+              <td><textarea name="" id="" cols="5" rows="1"></textarea></td>
+              <td><textarea name="" id="" cols="5" rows="1"></textarea></td>
+              <td><textarea name="" id="" cols="5" rows="1"></textarea></td>
+              <td><textarea name="" id="" cols="5" rows="1"></textarea></td>
+              <td><textarea name="" id="" cols="5" rows="1"></textarea></td>
+            </tr>
+            <tr>
+              <td><textarea name="" id="" cols="5" rows="1"></textarea></td>
+              <td><textarea name="" id="" cols="5" rows="1"></textarea></td>
+              <td><textarea name="" id="" cols="5" rows="1"></textarea></td>
+              <td><textarea name="" id="" cols="5" rows="1"></textarea></td>
+              <td><textarea name="" id="" cols="5" rows="1"></textarea></td>
+              <td><textarea name="" id="" cols="5" rows="1"></textarea></td>
+            </tr>
+            <tr>
+              <td><textarea name="" id="" cols="5" rows="1"></textarea></td>
+              <td><textarea name="" id="" cols="5" rows="1"></textarea></td>
+              <td><textarea name="" id="" cols="5" rows="1"></textarea></td>
+              <td><textarea name="" id="" cols="5" rows="1"></textarea></td>
+              <td><textarea name="" id="" cols="5" rows="1"></textarea></td>
+              <td><textarea name="" id="" cols="5" rows="1"></textarea></td>
+            </tr>
+          </table>
+        </fieldset>
+      </section>
+        <section id="4">
+          <h3><ins> אני מבקש/ת:</ins></h3>
+          <input type="radio" name="choices" value="yes" /> לערוך לי תיאום מס
+          בגין הכנסותי ובגין הפרשות המעביד לקרן השתלמות, לתגמולים ולפיצויים
+          <br />
+          <input type="radio" name="choices" value="no" /> לערוך לי תיאום מס
+          בגין הכנסותי ובגין הפרשות המעביד לקרן השתלמות, לתגמולים ולפיצויים
+        </section>
+        <br /><br />
+        <div class="explanation">
+          <h2><ins> דברי הסבר </ins></h2>
+          <p>
+            (1) בהסכמת העובד והמעביד ניתן לערוך תיאום מס על ידי המעביד ללא צורך 
+            בפניה לפקיד השומה - יש למלא טופס 101/130 .דברי הסבר <br />
+            (2) פרוד/ה - אך ורק עפ"י אישור פקיד השומה<br />
+            (3) אין לדווח על קצבה פטורה מביטוח לאומי וקצבת שאירים שכולה פטורה<br />
+            (4) יש לציין את גיל הילד (מספר השנים שימלאו לו במשך השנה). לדוגמא:
+            אם הילד נולד ב - 2011/2 ,יש לרשום, בשנת המס 2014 ,3 בטור זה. <br />
+            (5) אם מבוקש תיאום מס בגין הכנסות מריבית - יש למלא נספח לטופס 116)
+            טופס 116 ב). <br />
+            (6) יש לפרט את כל סוגי ההכנסה כגון: משכורת (מלאה, חלקית, נוספת,
+            יומית) קיצבה, הכנסות שחלה עליהן תקנה 6 א לתקנות מע"מ (כגון שכר
+            מרצים), ריבית, דמי אבטלה, דמי לידה וכל הכנסה אחרת, וכן מלגה הניתנת
+            ממכון מחקר או מכון מחקר תורני. אם יש לך הכנסות מעסק, עליך לפנות
+            לפקיד השומה, לחולייה בה מתנהל תיקך. במקרה של הכנסה מקיצבה יש לצרף
+            אישור המשלם, המאשר שלא הוון חלק מהקיצבה ולא שולם מענק. אם היה היוון
+            - אישור על פרטי ההיוון, לרבות שיעור הקיצבה שהוון, סכום ההיוון וסכום
+            ההיוון הפטור. אם שולם מענק פרישה - טופס 161 וטופס 161א. בהכנסה יש
+            לכלול גם החזר הוצאות נסיעה, החזקת רכב, טלפון, שווי מזון, שווי דיור
+            וכל תוספת אחרת בכסף או בשווה כסף וכן קיצבאות מביטוח לאומי החייבות
+            במס (דמי אבטלה, דמי לידה, גימלת שמירת הריון, דמי פגיעה, תגמולי
+            מילואים) וכל הכנסה אחרת מכל סוג שהוא. <br />
+            (7) יש לדרג את המעבידים/משלמים לפי סדר. כראשון יירשם המעביד העיקרי.
+            מעביד עיקרי הוא המעביד המשלם את המשכורת העיקרית. בהעדר משכורת קבועה
+            ייחשב כמעביד עיקרי משלם הקיצבה הקבועה. <br />
+            (8) בהכנסה ברוטו יש לכלול גם סכומים העתידים להשתלם במשך השנה כגון:
+            דמי הבראה, ספרות מקצועית, ביגוד, מענקים, משכורת 13 וכו'. <br />
+            (9) יש למלא אחד הטורים לפי העניין ובהתאם למסמכים/אישורים הקיימים
+            <br />(10 (הורה יחיד - הורה במשפחה חד הורית שהיה לו ילד שבשנת המס
+            טרם מלאו לו 19 שנים ושההורה השני של הילד נפטר או שהילד רשום במרשם
+            האוכלוסין בלא פרטי ההורה השני. <br />
+            (11" (יחיד מוטב" - יחיד שהוא או בן זוגו הגיע לגיל פרישה או שהוא או
+            בן זוגו עיוור או נכה כמשמעותם בסעיף 9)5)(א) לפקודה.
+           <br> (12 (הכנסה מכל סוג שהוא. ראה הערה (6.
+           <br>(13 (יש להמציא הוכחה כגון: אישור ממשטרת הגבולות בגין שהייה בחו"ל, אישור מחלה וכיו"ב.
+            <br>(14 (הורה במשפחה חד הורית הוא אחד מאלה: רווק, גרוש, אלמן, פרוד (עפ"י אישור פ"ש בלבד).
+           <br> (15 (ישוב מזכה - ישוב שחל עליו סעיף 11 לפקודה או סעיף 11 לחוק אס”ח, לפי העניין
+          <br> (*) ניתן לערוך תיאום מס בגין סעיפים אלו רק ע”י פקיד שומה. מייצג אינו רשאי לערוך תיאום מס בגינם.
+          </p>
+        </div>
+        <section class="statment5">
+          <h3>הצהרה</h3>
+          <ol>צ,ה
+            <li>אני מצהיר/ה בזאת שכל הםרטים שמסרתי בטופס זה,על כל חלקיו, הינם מלאים ונכונים ואין לי כל הכנסה נוספת על המפורט בו.</li>
+            <li> ידוע לי ואני מסכים/ה כי פרטי תיאום המס יועברו  על ידכם ישירות לכל אחד מהמעבידים/משלמים על פי הנתונים שהוצהרו בטופס זה</li>
+            <li>ידוע לי שהשמטה או מסירת פרטים לא נכונים הינה עבירה על פקודת מס הכנסה.</li>
+            <li>אני מתחייב/ת להודיע לפקיד השומה על כל שינוי שיחול בפרטיי האישיים תוך שבוע ימים מתאריך השינוי.</li>
+          </ol>
+          <label for="signature">חתימה:</label>
+           <input type="text" name="signature" placeholder="חתימה"> 
+           <label for="signature">תאריך חתימה:</label>
+           <input type="date" name="date">
+
+
+        </section>
+
+
+        <button>SEND</button>
+      </form>
+    </div>
+  </body>
+</html>
